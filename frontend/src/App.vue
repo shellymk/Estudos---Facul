@@ -1,4 +1,5 @@
 <template>
+  <guideTour />
   <Login
     v-if="tela === 'login'"
     @irCadastro="tela = 'cadastro'"
@@ -11,6 +12,7 @@
   />
 
   <div v-else-if="tela === 'dashboard'" class="layout">
+
     <div id="section-header">
       <Header />
     </div>
@@ -40,6 +42,7 @@ import Sidebar         from './components/Sidebar.vue'
 import HelloWorld      from './components/HelloWorld.vue'
 import UserList        from './components/UserList.vue'
 import FooterComponent from './components/FooterComponent.vue'
+import guideTour from './components/guide-tour.vue'
 
 const savedToken   = sessionStorage.getItem('token')
 const savedUserRaw = sessionStorage.getItem('user')
@@ -98,7 +101,7 @@ html, body {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  background: #111827;
+  background: #151e31;
 }
 
 .user-list-wrap {

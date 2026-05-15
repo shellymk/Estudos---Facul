@@ -2,6 +2,7 @@
   <header class="header">
     <h1>👋 Hello Guys!</h1>
   </header>
+  
 </template>
 
 <style scoped>
