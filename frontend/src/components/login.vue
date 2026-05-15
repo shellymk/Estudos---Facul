@@ -7,7 +7,7 @@
         <input v-model="email" type="email" class="input" placeholder="Email" required />
         <input v-model="password" type="password" class="input" placeholder="Senha" required />
 
-        <p><a href="#" @click.prevent>Esqueceu a senha?</a></p>
+        <p><a href="#" @click.prevent>Esqueceu a senha? Atere aqui.</a></p>
 
         <div class="buttons">
           <button type="submit" class="btn btn-primary" :disabled="loading">
